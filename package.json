@@ -1,0 +1,56 @@
+{
+  "name": "react-ts-tailwind",
+  "version": "1.0.0",
+  "description": "All-in-one template",
+  "main": "index.js",
+  "scripts": {
+    "build-react": "webpack --mode production",
+    "watch-server": "babel-watch src/server --presets=@babel/preset-typescript,@babel/preset-env --extensions=.ts",
+    "build-server": "babel src/server --extensions=.ts --out-dir dist ",
+    "build": "rimraf dist/ && yarn build-react && yarn build-server",
+    "start-dev": "concurrently \"webpack-dev-server\" \"yarn watch-server\"",
+    "dev": "yarn start-dev",
+    "prettier": "prettier --write \"src/**/*.{js,ts,tsx,scss,html}\"",
+    "reset": "rimraf yarn.lock && yarn install --force",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Dries Augustyns",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/express": "^4.17.7",
+    "@types/react": "^16.9.47",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "babel-watch": "^7.0.0",
+    "concurrently": "^5.3.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.1.0",
+    "style-loader": "^1.2.1",
+    "tailwindcss": "^1.7.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
