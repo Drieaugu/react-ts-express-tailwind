@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "All-in-one template",
   "main": "index.js",
+  "repository": "https://github.com/Drieaugu/ts-react-tailwind",
   "scripts": {
     "build-react": "webpack --mode production",
     "watch-server": "babel-watch src/server --presets=@babel/preset-typescript,@babel/preset-env --extensions=.ts",
@@ -15,10 +16,10 @@
     "start": "node dist/index.js"
   },
   "keywords": [
-    "template"
+    "Template", "TypeScript", "React", "Tailwind"
   ],
   "author": "Dries Augustyns",
-  "license": "ISC",
+  "license": "SEE LICENSE IN .LICENSE",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
