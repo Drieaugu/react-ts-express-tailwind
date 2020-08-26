@@ -1,7 +1,7 @@
 # react-ts-tailwind
 
 The all-in-one template that includes **TypeScript, React and Tailwind**!
-Other features in this template: **buit-in prettier configuration**, **hot-restarting development server**.
+Other features in this template: **built-in prettier configuration**, **hot-restarting development server**.
 
 ## How-to
 | Command | Usage|
