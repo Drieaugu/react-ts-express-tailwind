@@ -16,7 +16,10 @@
     "start": "node dist/index.js"
   },
   "keywords": [
-    "Template", "TypeScript", "React", "Tailwind"
+    "Template",
+    "TypeScript",
+    "React",
+    "Tailwind"
   ],
   "author": "Dries Augustyns",
   "license": "SEE LICENSE IN .LICENSE",
